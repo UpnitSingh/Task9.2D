@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.post-type {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-type-options {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+.form-group input[type="text"]::placeholder {
+  color: #999;
+}
+
+
+button {
+  padding: 10px 15px;
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    gap: 15px;
+  }
+
+  .form-group input[type="text"],
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
